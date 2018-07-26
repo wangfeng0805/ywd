@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ywd-consumer
+server:
+  port: 3111
+eureka:
+  client:
+    prefer-same-zone-eureka: true
+
+    region: shanghai
+    availability-zones:
+      shanghai: zone-1
+    service-url:
+      zone-1: http://localhost:1111/eureka/
